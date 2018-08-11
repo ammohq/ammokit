@@ -18,6 +18,7 @@ MySQL 5.7 compat (utf8mb4)
 - email confirmation handling;
 - account authentication using JSON Web Tokens;
 - CORS support;
+- API snake_case (python) to camelCase (JavaScript) conversion using [django-rest-camel](https://github.com/rense/django-rest-camel);
 
 ### Quick install
 
