@@ -1,0 +1,18 @@
+-e git+https://github.com/rense/django-rest-camel#egg=django-rest-camel
+
+argon2-cffi
+django
+django-anymail[mailgun]
+django-cors-headers
+django-extensions
+djangorestframework
+djangorestframework-jwt
+django-rest-auth[with_social]
+
+invoke
+
+mysqlclient
+
+pillow
+
+werkzeug
