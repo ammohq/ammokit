@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 import {Container} from "semantic-ui-react";
 
+
 class ConfirmEmail extends Component {
 
   render() {

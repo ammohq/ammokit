@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import {Form, Input, Label, Message} from 'semantic-ui-react';
+import {Form, Input, Label} from 'semantic-ui-react';
 
 
 function errorMessage(message) {

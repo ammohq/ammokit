@@ -4,7 +4,7 @@ import {Field, reduxForm, SubmissionError} from 'redux-form';
 import {AUTH_LOGIN} from "../../actions";
 import {Redirect} from "react-router-dom";
 import {translate} from "react-i18next";
-import {Button, Container, Form, Header} from "semantic-ui-react";
+import {Button, Form, Header} from "semantic-ui-react";
 import FormField from "../ui/form-field";
 
 import {required} from '../../helpers/validation';

@@ -3,9 +3,10 @@ import Consent from "react-cookie-consent";
 import {COOKIELAW_COOKIE} from "../../settings";
 import i18n from "../../i18n";
 
-export default class CookieConsent extends Component {
-  render() {
 
+export default class CookieConsent extends Component {
+
+  render() {
     return (
       <Consent
         location="bottom"

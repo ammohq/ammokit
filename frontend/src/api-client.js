@@ -1,5 +1,5 @@
 import axios from "axios";
-import {TOKEN, API_URL} from "./settings";
+import {API_URL, TOKEN} from "./settings";
 
 
 const apiClient = axios.create({

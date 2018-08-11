@@ -19,12 +19,12 @@ class App extends Component {
       <Fragment>
         <MainMenu/>
         <Container className='main'>
-        <Switch>
-          <Route exact path="/login" component={Login}/>
-          <Route exact path="/register" component={Register}/>
-          <Route exact path="/confirm-email" component={ConfirmEmail}/>
-          <PrivateRoute exact path="/" component={Main}/>
-        </Switch>
+          <Switch>
+            <Route exact path="/login" component={Login}/>
+            <Route exact path="/register" component={Register}/>
+            <Route exact path="/confirm-email" component={ConfirmEmail}/>
+            <PrivateRoute exact path="/" component={Main}/>
+          </Switch>
         </Container>
         <CookieConsent/>
       </Fragment>
