@@ -4,15 +4,22 @@ AMMOKIT Frontend
 Starter project with account authentication and registration functionality.
 Goes along with AMMOKIT Backend.
 
+### Minimal frontend requirements
+```
+React 16
+```
 
-Packages used:
+## Frontend features
+- account registration and login;
+- account authentication using JSON Web Tokens;
+- basic protected/authenticated-only views;
+- cookie-consent;
+- Semantic UI styling and components.
 
-- react, redux, redux-saga;
-- redux-form;
-- react-semantic-ui, semantic-ui-css (default css);
-
-- i18n, locale 'en', react-i18next;
-- moment, react-moment;
-
-- react-cookie-consent;
-- react-loading;
+### Quick install
+With project directory as current:
+``` 
+$ yarn install
+$ yarn start
+```
+If any backend settings changed, make sure to check  ./src/settings.js.
