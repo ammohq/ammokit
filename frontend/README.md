@@ -8,7 +8,7 @@ Goes along with AMMOKIT Backend.
 Packages used:
 
 - react, redux, redux-saga;
-- redux-form;
+- axios, redux-form;
 - react-semantic-ui, semantic-ui-css (default css);
 
 - i18n, locale 'en', react-i18next;
