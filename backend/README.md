@@ -7,8 +7,8 @@ Goes along with AMMOKIT Frontend.
 ### Minimal backend requirements
 ```
 Python 3.6+
-Django 2.1, Django REST Framework 3.8
-React 16.4
+Django 2.1
+Django REST Framework 3.8
 MySQL 5.7 compat (utf8mb4)
 ```
 
