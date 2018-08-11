@@ -32,10 +32,14 @@ $ pip install --upgrade pip
 $ pip install invoke pip-tools
 $ echo "development" > environment
 ```
-Change your database-name and -credentials in ./settings/development.py, install requirements, (re)created the database, run migrations and run the server:
+Change your database-name and -credentials in ./settings/development.py, install requirements, (re)create the database, run migrations:
 ```
 $ inv pip
 $ inv reset
+```
+Run the backend server with:
+```
 $ inv run
 ```
+
 
