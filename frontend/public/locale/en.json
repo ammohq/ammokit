@@ -1,0 +1,54 @@
+{
+  "errors": {
+    "required": "Required",
+    "numberRequired": "Must be a number",
+    "emailInvalid": "Invalid email address"
+  },
+  "authentication": {
+    "buttons": {
+      "logout": "Logout",
+      "login": "Login",
+      "register": "Register"
+    },
+    "title": "Welcome",
+    "form": {
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "repeatPassword": "Repeat password"
+    },
+    "errors": {
+      "invalidCredentials": "Wrong email-address and/or password.",
+      "emailAddressNotVerified": "This email-address has not been verified.",
+      "accountDisabled": "This account is disabled.",
+      "tooManyLoginAttempts": "Too many failed login attempts. Try again later."
+    },
+    "errorText": "Your email or password is incorrect."
+  },
+  "registration": {
+    "form": {
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "repeatPassword": "Repeat password",
+      "terms": "I agree with the terms and conditions"
+    },
+    "errors": {
+      "emailAddressRegistered": "A user is already registered with this e-mail address.",
+      "emailFieldInvalid": "Enter a valid email address.",
+      "passwordsNotMatching": "The two password fields didn't match.",
+      "passwordMinLength": "Password must be a minimum of 6 characters.",
+      "haveToAgreeToTerms": "You have to agree to the terms and conditions"
+    },
+    "confirmEmail": {
+      "title": "Confirm your email-address",
+      "text": "Thank you for registering. A confirmation mail has been sent. Please check your email.",
+      "emailConfirmed": "Your email-address has been confirmed."
+    }
+  },
+  "cookieConsent": {
+    "buttons": {
+      "agree": "Got it"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+
+body {
+  height: 100%;
+}
+
+/* semantic-ui-css fixes */
+
+.ui.basic.red.label {
+  color: #ffffff !important;
+}
+
+.ui.pointing.label, .ui[class*="pointing above"].label {
+  margin-top: 0;
+}
+
+.container.main {
+  padding: 7em 5em;
+}
