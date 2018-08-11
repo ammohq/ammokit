@@ -2,6 +2,8 @@
 Basic "decoupled application" starter project with a Django REST Framework backend and a React frontend. 
 Frontend styling is done with semantic-ui.
 
+Check the backend- and frontend-README files for more info. 
+
 ### Minimal requirements
 ```
 Python 3.6+
@@ -17,7 +19,6 @@ MySQL 5.7 compat (utf8mb4)
 - account authentication using JSON Web Tokens;
 - CORS support;
 - Cookie-consent support.
-
 
 ### Backend packages (from requirements.txt)
 ```
