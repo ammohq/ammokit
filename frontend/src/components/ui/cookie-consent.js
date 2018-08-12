@@ -19,7 +19,7 @@ export default class CookieConsent extends Component {
           fontSize: "12px"
         }}
         expires={150}>
-        {i18n.t("main.cookieConsent.text")}
+        {i18n.t("cookieConsent.text")}
       </Consent>
     )
   }

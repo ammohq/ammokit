@@ -47,6 +47,7 @@
     }
   },
   "cookieConsent": {
+    "text": "This website uses cookies.",
     "buttons": {
       "agree": "Got it"
     }
