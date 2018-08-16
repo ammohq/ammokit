@@ -5,7 +5,8 @@ import {connect} from "react-redux";
 import MainMenu from "./main-menu";
 import Login from "./account/login";
 import Register from "./account/register";
-import ConfirmEmail from "./account/confirm-email";
+import ForgotPassword from "./account/forgot-password";
+import ResetPassword from "./account/reset-password";
 import PrivateRoute from "../helpers/private-route";
 import CookieConsent from "./ui/cookie-consent";
 import Main from "./main";
@@ -21,8 +22,9 @@ class App extends Component {
         <Container className='main'>
           <Switch>
             <Route exact path="/login" component={Login}/>
+            <Route exact path="/forgot-password" component={ForgotPassword}/>
+            <Route exact path="/password/reset/:uid/:token" component={ResetPassword}/>
             <Route exact path="/register" component={Register}/>
-            <Route exact path="/confirm-email" component={ConfirmEmail}/>
             <PrivateRoute exact path="/" component={Main}/>
           </Switch>
         </Container>

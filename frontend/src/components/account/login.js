@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxForm, SubmissionError} from 'redux-form';
 import {AUTH_LOGIN} from "../../actions";
-import {Redirect} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import {translate} from "react-i18next";
 import {Button, Form, Header} from "semantic-ui-react";
 import FormField from "../ui/form-field";
@@ -83,11 +83,16 @@ class Login extends Component {
             {t('authentication.buttons.login')}
           </Button>
 
+          <Button as={Link} to='/forgot-password'>
+            {t('authentication.buttons.forgotPassword')}
+          </Button>
+
           {!confirmed &&
-          <Button as="a" href='/register'>
+          <Button positive as={Link} to='/register'>
             {t('authentication.buttons.register')}
           </Button>
           }
+
         </Form>
       </Fragment>
     );

@@ -5,9 +5,11 @@ import {
   AUTH_LOGIN_OK,
   AUTH_LOGOUT,
   AUTH_LOGOUT_OK,
+  AUTH_PASSWORD_RESET,
   AUTH_REGISTER,
   AUTH_REGISTER_FAIL,
   AUTH_REGISTER_OK,
+  AUTH_SEND_PASSWORD_RESET,
 } from "../actions";
 import apiClient from "../api-client";
 
@@ -49,6 +51,41 @@ export function* register() {
   while (true) {
     const request = yield take(AUTH_REGISTER);
     yield call(registerWorker, request);
+  }
+}
+
+
+export function* sendPasswordResetWorker({data, resolve, reject}) {
+  try {
+    const response = yield call(apiClient.post, 'auth/password/reset/', data);
+    yield call(resolve, response.data);
+  } catch (error) {
+    yield call(reject, {errors: error.response.data});
+  }
+}
+
+export function* sendPasswordReset() {
+  while (true) {
+    const request = yield take(AUTH_SEND_PASSWORD_RESET);
+    yield call(sendPasswordResetWorker, request);
+  }
+}
+
+export function* resetPasswordWorker({data, resolve, reject}) {
+  try {
+    const response = yield call(
+      apiClient.post, 'auth/password/reset/confirm/', data
+    );
+    yield call(resolve, response.data);
+  } catch (error) {
+    yield call(reject, {errors: error.response.data});
+  }
+}
+
+export function* resetPassword() {
+  while (true) {
+    const request = yield take(AUTH_PASSWORD_RESET);
+    yield call(resetPasswordWorker, request);
   }
 }
 

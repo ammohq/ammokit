@@ -6,12 +6,29 @@ import {Field, reduxForm, SubmissionError} from "redux-form";
 import {Button, Container, Form} from "semantic-ui-react";
 import FormField from "../ui/form-field";
 import {required, validateEmail} from "../../helpers/validation";
+import {Link} from "react-router-dom";
 
+
+class RegisterSuccess extends Component {
+  render() {
+    const {t} = this.props;
+    return (
+      <Container>
+        <h2>{t('registration.confirmEmail.title')}</h2>
+        <p>{t('registration.confirmEmail.text')}</p>
+      </Container>
+    )
+  }
+}
 
 class Register extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      success: false
+    };
+
     this.submit = this.submit.bind(this);
   };
 
@@ -24,7 +41,7 @@ class Register extends Component {
         reject
       });
     }).then(() => {
-      this.props.history.push('/confirm-email/');
+      this.setState({success: true});
     }).catch((error) => {
       throw new SubmissionError({
         ...error.errors,
@@ -35,6 +52,12 @@ class Register extends Component {
 
   render() {
     const {t, handleSubmit, pristine, submitting, error} = this.props;
+
+    if (this.state.success) {
+      return (
+        <RegisterSuccess t={t}/>
+      )
+    }
 
     return (
       <Container>
@@ -68,7 +91,7 @@ class Register extends Component {
             as={Form.Input}
             validate={required}
             label={t('authentication.form.password')}
-            placeholder='Email'/>
+            placeholder={t('authentication.form.password')}/>
 
           <Field
             required={true}
@@ -78,11 +101,15 @@ class Register extends Component {
             as={Form.Input}
             validate={required}
             label={t('authentication.form.repeatPassword')}
-            placeholder='Email'/>
+            placeholder={t('authentication.form.password')}/>
 
           {error &&
           <div className='form-wide-error mt-4'>{error}</div>
           }
+          <Button as={Link} to='/'>
+            {t('buttons.cancel')}
+          </Button>
+
           <Button
             positive
             loading={submitting}

@@ -1,4 +1,12 @@
-import {AUTH_LOGIN_FAIL, AUTH_LOGIN_OK, AUTH_LOGOUT_OK} from "../actions";
+import {
+  AUTH_LOGIN_FAIL,
+  AUTH_LOGIN_OK,
+  AUTH_LOGOUT_OK,
+  AUTH_PASSWORD_RESET_FAIL,
+  AUTH_PASSWORD_RESET_OK,
+  AUTH_SEND_PASSWORD_RESET_FAIL,
+  AUTH_SEND_PASSWORD_RESET_OK
+} from "../actions";
 
 import {TOKEN} from "../settings";
 
@@ -45,8 +53,16 @@ export default function reducer(state = initialState, action) {
       }
     }
 
+    // unused because of Saga Promise-resolve/reject
+    case AUTH_SEND_PASSWORD_RESET_FAIL:
+    case AUTH_SEND_PASSWORD_RESET_OK:
+    case AUTH_PASSWORD_RESET_OK:
+    case AUTH_PASSWORD_RESET_FAIL: {
+      return state;
+    }
+
     default: {
-      return state
+      return state;
     }
   }
 }

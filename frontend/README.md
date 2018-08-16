@@ -11,6 +11,7 @@ React 16
 
 ## Frontend features
 - account registration and login;
+- reset password with email confirmation;
 - account authentication using JSON Web Tokens;
 - basic protected/authenticated-only views;
 - cookie-consent;

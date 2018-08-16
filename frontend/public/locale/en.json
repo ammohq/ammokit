@@ -4,11 +4,19 @@
     "numberRequired": "Must be a number",
     "emailInvalid": "Invalid email address"
   },
+  "buttons": {
+    "back": "Back",
+    "cancel": "Cancel"
+  },
   "authentication": {
     "buttons": {
       "logout": "Logout",
       "login": "Login",
-      "register": "Register"
+      "register": "Register",
+      "forgotPassword": "Forgot password",
+      "sendPasswordResetLink": "Send reset link",
+      "resendPasswordResetLink": "Resend reset link",
+      "setNewPassword": "Set new password"
     },
     "title": "Welcome",
     "form": {
@@ -23,7 +31,26 @@
       "accountDisabled": "This account is disabled.",
       "tooManyLoginAttempts": "Too many failed login attempts. Try again later."
     },
-    "errorText": "Your email or password is incorrect."
+    "errorText": "Your email or password is incorrect.",
+    "forgotPassword": {
+      "title": "Forgot password?",
+      "text": "Enter your email-address and we'll send you a password reset-link.",
+      "resetMailSent": {
+        "title": "Forgot password",
+        "text": "A password reset email has been sent. Please check your email."
+      }
+    },
+    "resetPassword": {
+      "title": "Reset password",
+      "text": "Enter a new password.",
+      "passwordReset": {
+        "title": "Password reset",
+        "text": "Your password has been successfully reset."
+      },
+      "errors": {
+        "tokenInvalid": "This confirmation-token is invalid. It has probably already been used."
+      }
+    }
   },
   "registration": {
     "form": {
