@@ -15,10 +15,12 @@ MySQL 5.7 compat (utf8mb4)
 ## Features
 - account registration;
 - account email confirmation;
+- reset password with email confirmation;
 - email confirmation handling;
 - account authentication using JSON Web Tokens;
 - CORS support;
-- Cookie-consent support.
+- Cookie-consent support;
+- internationalisation using [i18next](https://www.i18next.com/).
 
 ### Backend packages (from requirements.txt)
 ```
