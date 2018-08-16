@@ -5,7 +5,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 SECRET_KEY = 'ammokit-development-key'
 
-FRONTEND_URL = 'http://localhost:3000/'
+FRONTEND_DOMAIN = 'localhost:3000'
+FRONTEND_URL = 'http://{}/'.format(FRONTEND_DOMAIN)
 
 CORS_ORIGIN_ALLOW_ALL = True
 
