@@ -127,7 +127,7 @@ class ResetPassword extends Component {
   }
 }
 
-const mapStateToProps = ({auth, account}) => ({auth, account});
+const mapStateToProps = ({auth}) => ({auth});
 const resetPasswordForm = reduxForm({form: 'resetPasswordForm'})(ResetPassword);
 export default connect(mapStateToProps)(translate()(resetPasswordForm));
 

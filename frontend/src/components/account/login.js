@@ -99,7 +99,7 @@ class Login extends Component {
   }
 }
 
-const mapStateToProps = ({auth, account}) => ({auth, account});
+const mapStateToProps = ({auth}) => ({auth});
 const loginForm = reduxForm({form: 'loginForm'})(Login);
 export default connect(mapStateToProps)(translate()(loginForm));
 

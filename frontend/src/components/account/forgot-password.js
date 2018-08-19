@@ -104,7 +104,7 @@ class ForgotPassword extends Component {
   }
 }
 
-const mapStateToProps = ({auth, account}) => ({auth, account});
+const mapStateToProps = ({auth}) => ({auth});
 const forgotPassword = reduxForm({form: 'forgotPassword'})(ForgotPassword);
 export default connect(mapStateToProps)(translate()(forgotPassword));
 
