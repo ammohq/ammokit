@@ -43,9 +43,11 @@ class Register extends Component {
     }).then(() => {
       this.setState({success: true});
     }).catch((error) => {
+      let nonFieldErrors = error.errors.nonFieldErrors;
+
       throw new SubmissionError({
         ...error.errors,
-        _error: error.errors.nonFieldErrors[0] || undefined
+        _error: nonFieldErrors ? nonFieldErrors[0] : undefined
       });
     })
   };
