@@ -5,29 +5,29 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 -e git+https://github.com/rense/django-rest-camel#egg=django-rest-camel
-argon2-cffi==18.3.0
+argon2-cffi==19.1.0
 certifi==2018.11.29       # via requests
-cffi==1.11.5              # via argon2-cffi
+cffi==1.12.2              # via argon2-cffi
 chardet==3.0.4            # via requests
 defusedxml==0.5.0         # via python3-openid
-django-allauth==0.38.0    # via django-rest-auth
-django-anymail[mailgun]==5.0
-django-cors-headers==2.4.0
-django-extensions==2.1.4
+django-allauth==0.39.1    # via django-rest-auth
+django-anymail[mailgun]==6.0
+django-cors-headers==2.5.0
+django-extensions==2.1.6
 django-rest-auth[with_social]==0.9.3
-django==2.1.4
+django==2.1.7
 djangorestframework-jwt==1.11.0
-djangorestframework==3.9.0
+djangorestframework==3.9.2
 idna==2.8                 # via requests
 invoke==1.2.0
-mysqlclient==1.3.14
-oauthlib==2.1.0           # via requests-oauthlib
-pillow==5.3.0
+mysqlclient==1.4.2.post1
+oauthlib==3.0.1           # via requests-oauthlib
+pillow==5.4.1
 pycparser==2.19           # via cffi
 pyjwt==1.7.1              # via djangorestframework-jwt
 python3-openid==3.1.0     # via django-allauth
-pytz==2018.7              # via django
-requests-oauthlib==1.0.0  # via django-allauth
+pytz==2018.9              # via django
+requests-oauthlib==1.2.0  # via django-allauth
 requests==2.21.0          # via django-allauth, django-anymail, requests-oauthlib
 six==1.12.0               # via argon2-cffi, django-anymail, django-extensions, django-rest-auth
 urllib3==1.24.1           # via requests
