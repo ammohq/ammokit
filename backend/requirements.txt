@@ -9,13 +9,14 @@ argon2-cffi==19.1.0
 certifi==2019.3.9         # via requests
 cffi==1.12.3              # via argon2-cffi
 chardet==3.0.4            # via requests
+click==7.0                # via pip-tools
 defusedxml==0.6.0         # via python3-openid
 django-allauth==0.39.1    # via django-rest-auth
 django-anymail[mailgun]==6.0
 django-cors-headers==2.5.3
 django-extensions==2.1.6
 django-rest-auth[with_social]==0.9.5
-django==2.2.1
+django==2.2.2
 djangorestframework-jwt==1.11.0
 djangorestframework==3.9.3
 idna==2.8                 # via requests
@@ -23,13 +24,14 @@ invoke==1.2.0
 mysqlclient==1.4.2.post1
 oauthlib==3.0.1           # via requests-oauthlib
 pillow==6.0.0
+pip-tools==3.8.0
 pycparser==2.19           # via cffi
 pyjwt==1.7.1              # via djangorestframework-jwt
 python3-openid==3.1.0     # via django-allauth
 pytz==2019.1              # via django
 requests-oauthlib==1.2.0  # via django-allauth
 requests==2.21.0          # via django-allauth, django-anymail, requests-oauthlib
-six==1.12.0               # via argon2-cffi, django-anymail, django-extensions, django-rest-auth
+six==1.12.0               # via argon2-cffi, django-anymail, django-extensions, django-rest-auth, pip-tools
 sqlparse==0.3.0           # via django
 urllib3==1.24.3           # via requests
 werkzeug==0.15.2
