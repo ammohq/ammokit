@@ -34,4 +34,4 @@ requests==2.21.0          # via django-allauth, django-anymail, requests-oauthli
 six==1.12.0               # via argon2-cffi, django-anymail, django-extensions, django-rest-auth, pip-tools
 sqlparse==0.3.0           # via django
 urllib3==1.24.3           # via requests
-werkzeug==0.15.2
+werkzeug==0.15.3
