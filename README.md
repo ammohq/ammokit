@@ -7,7 +7,7 @@ Check the backend- and frontend-README files for more info.
 ### Minimal requirements
 ```
 Python 3.6+
-Django 2.1, Django REST Framework 3.8
+Django 2.2, Django REST Framework 3.10
 React 16.4
 MySQL 5.7 compat (utf8mb4)
 ```
