@@ -1,0 +1,41 @@
+version: '3.7'
+
+
+x-default-envvars: &default-envvars
+  APPLICATION_RUN_TYPE: "development"
+  MYSQL_HOST: "db"
+  MYSQL_PORT: "3306"
+  MYSQL_USER: "ammokit"
+  MYSQL_DATABASE: "ammokit"
+  MYSQL_ROOT_PASSWORD: "4mm0k1t"
+  MYSQL_PASSWORD: "4mm0k1t"
+
+x-default-app: &default-app
+  build:
+    dockerfile: ./docker/Dockerfile
+    context: .
+  volumes:
+    - ./:/app
+  environment:
+    <<: *default-envvars
+
+services:
+  app:
+    <<: *default-app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:latest
+    volumes:
+      - ammokit_db_dev:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      <<: *default-envvars
+
+volumes:
+  ammokit_db_dev: {}

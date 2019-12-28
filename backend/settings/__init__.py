@@ -2,7 +2,8 @@ import base64
 import datetime
 import os
 
-from environment import base_dir as BASE_DIR
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 DEBUG = False
 
