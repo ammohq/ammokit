@@ -1,7 +1,7 @@
 -e git+https://github.com/rense/django-rest-camel#egg=django-rest-camel
 
 argon2-cffi
-django>=2.2.2
+Django>=2.2.9
 django-anymail[mailgun]
 django-cors-headers
 django-extensions

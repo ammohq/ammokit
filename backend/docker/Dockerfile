@@ -7,7 +7,6 @@ RUN apk add jpeg-dev zlib-dev git \
 	&& apk --no-cache add --virtual build-dependencies \
       build-base \
       linux-headers \
-      py-mysqldb \
       gcc \
       libc-dev \
       libffi-dev \
