@@ -26,6 +26,7 @@ services:
       - 8000:8000
     depends_on:
       - db
+    restart: on-failure
 
   db:
     image: mariadb:latest
@@ -33,7 +34,7 @@ services:
       - ammokit_db_dev:/var/lib/mysql
     ports:
       - "3306:3306"
-    restart: always
+    restart: on-failure
     environment:
       <<: *default-envvars
 

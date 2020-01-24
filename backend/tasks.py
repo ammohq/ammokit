@@ -5,7 +5,8 @@ from invoke import task, Exit
 from environment import base_dir, environment
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings.%s' % environment)
-manage_file = os.path.join(base_dir, 'manage.py')
+
+manage_file = os.path.join('./', 'manage.py')
 
 
 @task
