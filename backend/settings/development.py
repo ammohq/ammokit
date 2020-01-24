@@ -1,3 +1,5 @@
+import os
+
 from settings import *
 
 DEBUG = True
@@ -12,12 +14,11 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 DATABASE_DEFAULT = {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'ammokit',
-    'USER': 'development',
-    'PASSWORD': 'development',
-
-    'HOST': '127.0.0.1',
-    'PORT': '3306',
+    'NAME': os.environ.get('MYSQL_DATABASE', None),
+    'USER': os.environ.get('MYSQL_USER', None),
+    'PASSWORD': os.environ.get('MYSQL_PASSWORD', None),
+    'HOST': os.environ.get('MYSQL_HOST', None),
+    'PORT': os.environ.get('MYSQL_PORT', None),
     'OPTIONS': {
         'init_command': "SET sql_mode='STRICT_ALL_TABLES'",
         'charset': 'utf8mb4'
@@ -41,4 +42,3 @@ REST_FRAMEWORK['DEFAULT_RENDERER_CLASSES'] += (
 PID_DIR = '/tmp/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-

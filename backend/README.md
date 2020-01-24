@@ -44,4 +44,16 @@ Run the backend server with:
 $ inv run
 ```
 
+### Using docker / docker-compose
 
+Make sure you have both [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/) installed.
+
+First, prepare the image:
+
+```bash
+$ docker-compose build
+```
+
+Now you should be good to go.
+
+Run `$ docker-compose up` to launch the stack and visit on `0.0.0.0:8000`
