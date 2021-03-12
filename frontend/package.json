@@ -43,7 +43,7 @@
     "raf": "3.4.0",
     "react": "^16.4.2",
     "react-cookie-consent": "^1.7.0",
-    "react-dev-utils": "^5.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-i18next": "^7.10.1",
     "react-loading": "^2.0.3",
